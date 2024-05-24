@@ -1,0 +1,54 @@
+.wrapper {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.svg {
+  width: 400px;
+  height: 300px;
+  border: 1px solid black;
+}
+.square {
+  animation: squareAnimation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+@keyframes squareAnimation {
+  0% {
+    fill: #c326a8;
+    stroke: rgb(127, 0, 153);
+    stroke-width: 3px;
+  }
+  50% {
+    fill: yellow;
+    stroke: rgb(171, 132, 3);
+    stroke-width: 6px;
+
+  }
+  100% {
+    fill: green;
+    stroke: rgb(2, 101, 21);
+    stroke-width: 9px;
+  }
+}
+.ellipse {
+  animation: ellipseAnimation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+@keyframes ellipseAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
